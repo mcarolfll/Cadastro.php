@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão de RH</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-briefcase"></i>
+                    <h1>Sistema RH</h1>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link active">
+                        <i class="fas fa-home"></i> Início
+                    </a>
+                    <a href="candidato.php" class="nav-link">
+                        <i class="fas fa-user-tie"></i> Candidatos
+                    </a>
+                    <a href="empresa.php" class="nav-link">
+                        <i class="fas fa-building"></i> Empresas
+                    </a>
+                    <a href="dashboard.php" class="nav-link">
+                        <i class="fas fa-chart-bar"></i> Dashboard
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="hero">
+                <div class="hero-content">
+                    <h2 class="hero-title">Bem-vindo ao Sistema de Gestão de RH</h2>
+                    <p class="hero-subtitle">Gerencie candidatos e empresas de forma eficiente e moderna</p>
+                </div>
+            </section>
+
+            <section class="features">
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <h3>Cadastrar Candidatos</h3>
+                        <p>Registre informações completas dos candidatos de forma organizada</p>
+                        <a href="candidato.php" class="btn btn-primary">
+                            <i class="fas fa-arrow-right"></i> Acessar
+                        </a>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Cadastrar Empresas</h3>
+                        <p>Mantenha um registro completo das empresas parceiras</p>
+                        <a href="empresa.php" class="btn btn-primary">
+                            <i class="fas fa-arrow-right"></i> Acessar
+                        </a>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Dashboard</h3>
+                        <p>Visualize estatísticas e relatórios do sistema</p>
+                        <a href="dashboard.php" class="btn btn-primary">
+                            <i class="fas fa-arrow-right"></i> Acessar
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stats">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon candidatos">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="total-candidatos">0</h3>
+                            <p>Candidatos Cadastrados</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon empresas">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3 id="total-empresas">0</h3>
+                            <p>Empresas Cadastradas</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Sistema de Gestão de RH. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
